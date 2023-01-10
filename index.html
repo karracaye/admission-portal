@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <title> CSPC Admission Portal </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+	<title>Essential JS 2 Calendar Component</title>
+            <!-- Essential JS 2 Calendar's dependent material theme -->
+            <link href="https://cdn.syncfusion.com/ej2/ej2-base/styles/material.css" rel="stylesheet" type="text/css" />
+            <link href="https://cdn.syncfusion.com/ej2/ej2-buttons/styles/material.css" rel="stylesheet" type="text/css" />
+            <link href="https://cdn.syncfusion.com/ej2/ej2-calendars/styles/material.css" rel="stylesheet" type="text/css" />
+
+            <!-- Essential JS 2 all script -->
+            <!-- <script src="https://cdn.syncfusion.com/ej2/dist/ej2.min.js" type="text/javascript"></script> -->
+
+            <!-- Essential JS 2 Calendar's dependent scripts -->
+            <script src="https://cdn.syncfusion.com/ej2/ej2-base/dist/global/ej2-base.min.js" type="text/javascript"></script>
+            <script src="https://cdn.syncfusion.com/ej2/ej2-inputs/dist/global/ej2-inputs.min.js" type="text/javascript"></script>
+            <script src="https://cdn.syncfusion.com/ej2/ej2-buttons/dist/global/ej2-buttons.min.js" type="text/javascript"></script>
+            <script src="https://cdn.syncfusion.com/ej2/ej2-lists/dist/global/ej2-lists.min.js" type="text/javascript"></script>
+            <script src="https://cdn.syncfusion.com/ej2/ej2-popups/dist/global/ej2-popups.min.js" type="text/javascript"></script>
+            <script src="https://cdn.syncfusion.com/ej2/ej2-calendars/dist/global/ej2-calendars.min.js" type="text/javascript"></script>
+</head>
+<body>
+<section class="header">
+	<nav>
+		<input id="nav-toggle" type="checkbox">
+		<div class="logo"><a href="index.html"><img src="images/cspc-logo.png"></a><h1>CSPC ADMISSION PORTAL</h1></div>
+		<ul class="links">
+			<li><a href="index.html">HOME </a></li>
+			<li><a href="colleges.html">COLLEGES </a></li>
+			<li><a href="appform.html">APPLICATION FORM </a></li>
+			<li><a href="help.html">HELP </a></li>
+		</ul>
+		<label for="nav-toggle" class="icon-burger">
+			<div class="line"></div>
+			<div class="line"></div>
+			<div class="line"></div>
+		</label>
+	</nav>
+	<div class="text-box">
+			<h1>CAMARINES SUR POLYTECHNIC COLLEGES</h1>
+			<p>ARE YOU READY TO BE A CSPCEAN?</p>
+			<a href="help.html" class="hero-btn ">Learn More!</a>
+	</div>
+</section>
+<section class="table">
+	<h1>COLLEGE NUMBER OF ADMISSION</h1>
+	<div class= "table-sec">
+		<table style="width:100%">
+			<tr>
+				<th>Colleges</th>
+				<th>Transferee Students</th> 
+				<th>1st Year Students</th>
+			</tr>
+			<tr>
+				<td>COE</td>
+				<td>2</td>
+				<td>6</td>
+			</tr>
+			<tr>
+				<td>CCS</td>
+				<td>1</td>
+				<td>5</td>
+			</tr>
+			<tr>
+				<td>CEAS</td>
+				<td>4</td>
+				<td>5</td>
+			</tr>
+			<tr>
+				<td>CBM</td>
+				<td>0</td>
+				<td>3</td>
+			</tr>
+			<tr>
+				<td>CHS</td>
+				<td>0</td>
+				<td>7</td>
+			</tr>
+		</table>
+	</div>
+		<div id="wrapper">
+			<h1>AVAILABLE DATES</h1>
+				<h5>Admission Slots Remaining: 16</h5>
+        <div id="element"/>
+        </div>
+        <script>
+            // initialize Calendar component
+            var calendar = new ej.calendars.Calendar();
+
+            // Render initialized button.
+            calendar.appendTo('#element')
+		</script>
+		</div>
+</section>
+    <!-- ADDITIONAL DETAILS -->
+<section class="details">
+        <h1>SET YOUR APPOINTMENT NOW</h1>
+        <p1>To schedule an appointment. Please fill out the information below. Carefully read the general information for CSPC-CET and answer all the details being asked as honestly as you possible.</p1>
+</section>
+    <footer>
+        <div class = "footer-content">
+            <h3> Camarines Sur Polytechnic Colleges</h3>
+            <h3> CSPC Admission Portal </h3>
+            <p> Copyright 2021 </p>
+        </div>
+    </footer>
+</body>
+
+</html>

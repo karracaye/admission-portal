@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <title> CSPC Admission Portal </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+	<section class="header-ref">
+		
+			<nav>
+				<input id="nav-toggle" type="checkbox">
+				<div class="logo"><a href="index.html"><img src="images/cspc-logo.png"></a><h1>CSPC ADMISSION PORTAL</h1></div>
+				<ul class="links">
+					<li><a href="index.html">HOME </a></li>
+                    <li><a href="colleges.html">COLLEGES </a></li>
+                    <li><a href="appform.html">APPLICATION FORM </a></li>
+                    <li><a href="help.html">HELP </a></li>
+				</ul>
+				<label for="nav-toggle" class="icon-burger">
+					<div class="line"></div>
+					<div class="line"></div>
+					<div class="line"></div>
+				</label>
+			</nav>
+		<div class="random">
+			<h1> REFERENCE CODE: </h1>
+			<p>Below is the your reference number. Take a photo or screenshot the Reference number as a proof of your admission appointment and will serve as an official gate pass.</p>
+            <div id="random_string_sample"></div>
+        </div>
+	</section>
+    <header>
+        <div class="wrapper">
+            <div class="logo">
+            </div>
+        </div>
+        </section>
+
+    </header>
+
+    </div>
+    </div>
+    <script>
+        //call this a function to start
+        // create_random_string() //
+        //para sa pagcreate ng random reference number para sa magaapply ng application for entrance exam. 
+        var random_string_sample = document.getElementById('random_string_sample') //getElementById is a method to find an HTML element. which I declared above. the <div id=" " //
+        random_string_sample.innerHTML = create_random_string(10) // the id = "demo" and needed to change to innerHTML which means you will get the output. //
+            // the (10) is the random string. sampung letter or number ung lalabas sa reference number.
+        function create_random_string(string_length) {
+            var random_string = ''; // single or double quotation for storing a text.
+            var characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789abcdefghijklmnopqrstuvwxyz'
+            for (var i, i = 0; i < string_length; i++) //length of the a string is found in the built.
+            {
+                random_string += characters.charAt(Math.floor(Math.random() * characters.length))
+            }
+            return random_string
+        }
+    </script>
+
+</body>
+
+</html>

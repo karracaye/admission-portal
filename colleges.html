@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <title> CSPC Admission Portal </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+
+</head>
+
+<body>
+        <section class="header-college">
+			<nav>
+				<input id="nav-toggle" type="checkbox">
+				<div class="logo"><a href="index.html"><img src="images/cspc-logo.png"></a><h1>CSPC ADMISSION PORTAL</h1></div>
+				<ul class="links">
+					<li><a href="index.html">HOME </a></li>
+                    <li><a href="colleges.html">COLLEGES </a></li>
+                    <li><a href="appform.html">APPLICATION FORM </a></li>
+                    <li><a href="help.html">HELP </a></li>
+				</ul>
+				<label for="nav-toggle" class="icon-burger">
+					<div class="line"></div>
+					<div class="line"></div>
+					<div class="line"></div>
+				</label>
+			</nav>
+			<div class="banner-area">
+				<div class="moving-words">
+					<div class="words">
+						<h1>
+							<span class="txt-type" data-wait="3000" data-words='[ "C S P C"]'></span>
+						</h1>
+
+					</div>
+				</div>
+			</div>
+			<script src="main.js"></script>
+        </section>
+
+
+					<section class = "sec-accordion">
+
+							<h2> COURSE OFFERED </h2>
+							<p>We are driven by our mission to transform the lives of our students to be free of poverty by helping them to create a better future through world-class polytechnic education and technological innovation.</p>
+
+							</h1><button class="accordion"> COLLEGE OF ENGINEERING </button>
+							<div class="panel">
+								<p> The College of Engineering envisions to be the leading competitive school all over the state colleges in the region. It has been a consistent contributor to the College’s achievement with regards to board examination performance by producing topnotchers as well as in various competitions whether regional or national. It is composed of four departments namely: Civil Engineering, Mechanical Engineering, Electrical Engineering and Electronics Engineering.</p>
+									<li>Bachelor of Science in Civil Engineering</li>
+									<li>Bachelor of Science in Mechanical Engineering</li>
+									<li>Bachelor of Science in Electrical Engineering</li>
+									<li>Bachelor of Science in Electronics Engineering</li>
+							</div>
+
+							<button class="accordion"> COLLEGE OF COMPUTER STUDIES </button>
+							<div class="panel">
+								<p>The College of Computer Studies commits to provide quality instruction so as to produce graduates who are equipped with the competencies required for professional information and communication technology to address the demands in the changing global agenda. At present, CCS offers BS in Information Technology, BS Computer Science, BS Information Systems, Bachelor of Library Information Science, and Two-Year Certificate in Computer
+							Technician.</p>
+									<li>Bachelor of Science in Information Technology</li>
+									<li>Bachelor of Science in Computer Science</li>
+									<li>Bachelor of Library Information Science</li>
+									<li>Bachelor of Science in Information Systems</li>
+							</div>
+
+							<button class="accordion"> COLLEGE OF HEALTH SCIENCES </button>
+							<div class="panel">
+							  <p>The College of Health Sciences offers a ladderized program for Nursing and Midwifery and its main goal is to provide a quality education that will harness the maximum potential of the learner, develop nurses and midwives who are caring, responsible, nationalistic, creative, and critical thinking generalist, who upon completion of the program demonstrates professional competencies. Currently, the department offers BS Nursing and BS Midwifery.</p>
+									<li>Bachelor of Science in Nursing</li>
+									<li>Bachelor of Science in Midwifery</li>
+							</div>
+
+							<button class="accordion"> COLLEGE OF BUSINESS MANAGEMENT </button>
+							<div class="panel">
+							  <p>The College of Business Management produces qualified and skilled graduates in Office Administration, Hospitality Management, Tourism Management and in Entrepreneurship. These students are expected to give the best public service both in government and private employment for Office Administration graduates and in hotels, restaurants, inns, banquet, facilities, and clubs for Food Service Management graduates as well as in the field of Entrepreneurship and Tourism.</p>
+									<li>Bachelor of Science in Office Administration</li>
+									<li>Bachelor of Science in Hospitality Management</li>
+									<li>Bachelor of Science in Tourism Management</li>
+									<li>Bachelor of Science in Entrepreneurship</li>
+							</div>
+
+							<button class="accordion"> COLLEGE OF EDUCATION, ARTS AND SCIENCES </button>
+							<div class="panel">
+							  <p>The College of Education, Arts & Sciences aims to provide quality instruction and training in Technical Teacher Education, Arts & Sciences through the ladderized curricula in Technical Teacher Education, Arts & Sciences which are responsible & relevant to the needs in the development of service area in particular, and the country in general. Currently, the department offers: Bachelor of Technical-Vocational Teacher Education, BS Mathematics and AB English Language.</p>
+									<li>Bachelor of Arts in English Language</li>
+									<li>Bachelor of Science in Mathematics</li>
+									<li>Bachelor of Science in Developmental Communication</li>
+									<li>Bachelor in Public Administration</li>
+									<li>Bachelor in Human Services</li>
+							</div>
+
+							<script>
+							var acc = document.getElementsByClassName("accordion");
+							var i;
+
+							for (i = 0; i < acc.length; i++) {
+							  acc[i].addEventListener("click", function() {
+								this.classList.toggle("active");
+								var panel = this.nextElementSibling;
+								if (panel.style.maxHeight) {
+								  panel.style.maxHeight = null;
+								} else {
+								  panel.style.maxHeight = panel.scrollHeight + "px";
+								} 
+							  });
+							}
+							</script>
+					</section>
+	<section class="details">
+        <h1>SET YOUR APPOINTMENT NOW</h1>
+        <p1>To schedule an appointment. Please fill out the information below. Carefully read the general information for CSPC-CET and answer all the details being asked as honestly as you possible.</p1>
+	</section>
+    <footer>
+        <div class = "footer-content">
+            <h3> Camarines Sur Polytechnic Colleges</h3>
+            <h3> CSPC Admission Portal </h3>
+            <p> Copyright 2021 </p>
+        </div>
+    </footer>
+</body>
+</html>
